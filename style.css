@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #1c1b19;
+}
+
+.box{
+    /* display: inline-block; */
+    width: 70%;
+    height: 70%;
+    border: 1px solid #f75341;
+}
+
+#img-container{
+    
+}
+
+img {
+    width: 500px;
+    height: 100px;
+}
