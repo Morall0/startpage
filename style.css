@@ -1,25 +1,64 @@
+
+@font-face {
+    font-family: 'Hasklug NF';
+    src: url('/assets/fonts/Hasklug\ Nerd\ Font\ Complete\ Mono.otf');
+}
+
 body {
+    font-family: 'Hasklug NF', 'Courier New', Courier, monospace;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
     margin: 0;
+    color: white;
     background-color: #1c1b19;
 }
 
 .box{
-    /* display: inline-block; */
-    width: 70%;
+    width: 85%;
     height: 70%;
-    border: 1px solid #f75341;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #f75341; */
 }
 
-#img-container{
-    
+#img{
+    width: 50%;
+    height: 90%;
+    /* height: 350px; */
+    background-image: url('assets/img/1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border: 2px solid green; */
 }
 
-img {
-    width: 500px;
-    height: 100px;
+#links {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #f75341; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h1{
+    display: inline;
+}
+
+h4{
+    font-weight: normal;
+}
+
+#cursorAnimation{
+    border-bottom: white solid 1px;
+    animation: blink 0.5s infinite step-end alternate;
+}
+
+@keyframes blink {
+    50% {
+        border-bottom-color: transparent;
+    }
 }
