@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: 'Hasklug NF';
-    src: url('/assets/fonts/Hasklug\ Nerd\ Font\ Complete\ Mono.otf');
+    font-family: HasklugNF;
+    src: url('./assets/fonts/Hasklug Nerd Font Complete Mono.otf');
 }
 
 body {
-    font-family: 'Hasklug NF', 'Courier New', Courier, monospace;
+    font-family: HasklugNF, monospace;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
@@ -20,13 +20,17 @@ body {
     width: 85%;
     height: 70%;
     display: flex;
+	flex-flow: row wrap;
     align-items: center;
+	justify-content:center;
     /* border: 1px solid #f75341; */
 }
 
 #img{
     width: 50%;
+    min-width: 475px;
     height: 90%;
+    min-height:400px;
     /* height: 350px; */
     background-image: url('assets/img/1.png');
     background-size: cover;
@@ -37,10 +41,10 @@ body {
 
 #links {
     width: 50%;
-    height: 100%;
+/*    height: 100%;*/
     /* border: 1px solid #f75341; */
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
 }
 
@@ -48,8 +52,8 @@ h1{
     display: inline;
 }
 
-h4{
-    font-weight: normal;
+h3{
+    /*font-weight: normal;*/
 }
 
 #cursorAnimation{
@@ -57,8 +61,60 @@ h4{
     animation: blink 0.5s infinite step-end alternate;
 }
 
+#cols{
+	width:100%;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:space-evenly;
+}
+
+.col{
+	width:20%;
+	text-align:center;
+}
+ul, li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited{
+	color:white;
+}
+
 @keyframes blink {
     50% {
         border-bottom-color: transparent;
     }
+}
+
+@media screen and (max-width: 1117px){
+	#links{
+		width: 100%;
+	}
+	
+	.box{
+		align-self: stretch;
+	}
+}
+
+@media screen and (min-width: 1118px) and (max-width: 1450px){
+	.box{
+		width:100%;
+	}
+
+	#img{
+		min-width: unset;
+		min-height: unset;
+		width: 34%;
+		height: 60%;
+	}
+
+	#links{
+		width: 66%;
+	}
 }
