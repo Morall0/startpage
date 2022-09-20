@@ -70,7 +70,7 @@ h3{
 
 .col{
 	width:20%;
-	text-align:center;
+	text-align: left;
 }
 ul, li{
 	list-style:none;
@@ -84,6 +84,11 @@ a{
 
 a:visited{
 	color:white;
+}
+
+.shortcut{
+	color: #fbb829;
+;
 }
 
 @keyframes blink {
