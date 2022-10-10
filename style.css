@@ -52,8 +52,23 @@ h1{
     display: inline;
 }
 
-h3{
-    /*font-weight: normal;*/
+form {
+	display: inline;
+}
+
+input{
+    font-family: HasklugNF, monospace;
+	font-size: 2rem;
+	font-weight: bold;
+	border: none;
+	background-color: transparent;
+	color: white;
+	width: 0px;
+}
+
+input:focus{
+	outline: none;
+	caret-color: transparent;
 }
 
 #cursorAnimation{
