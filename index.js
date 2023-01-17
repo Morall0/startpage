@@ -1,17 +1,19 @@
-function stringLength(key) {
-		return len;
-}
+const cols=document.getElementById('cols');
 
-const a_tags = document.getElementsByTagName('a');
-const keys = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,T,U,V,X,Y,Z";
-const keys_array = keys.split(",", a_tags.length);
+// Creating all the columns for the sites.
+slist.forEach((sites)=>{
+    let col=document.createElement("div");
+    col.className = 'col';
+    let ul=document.createElement("ul");
+    col.innerHTML=`<h3>/${sites.type}/</>`;
 
-
-for (let i=0; i<a_tags.length; i++) {
-	let htmlContent = a_tags[i].innerHTML;
-	a_tags[i].id = keys_array[i];
-	a_tags[i].innerHTML = `<span class="shortcut">[${keys_array[i]}]</span> ${htmlContent}`;
-}
+    // Adding the sites for each type.
+    sites.sites.forEach((site)=>{
+        ul.innerHTML+=`<li><a id="${site.key}" target="_blank" href="${site.link}"><span class="shortcut">[${site.key}] </span>${site.name}</a></li>`; 
+    });
+    col.appendChild(ul);
+    cols.appendChild(col);
+});
 
 const htmlHotkey = document.getElementsByTagName('html')[0];
 const inputSearch = document.getElementById('inputSearch');
