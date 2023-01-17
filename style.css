@@ -64,6 +64,7 @@ input{
 	background-color: transparent;
 	color: white;
 	width: 0px;
+	max-width: 562px;
 }
 
 input:focus{
@@ -119,6 +120,10 @@ a:visited{
 	
 	.box{
 		align-self: stretch;
+	}
+
+	input{
+		max-width: 576px;
 	}
 }
 
