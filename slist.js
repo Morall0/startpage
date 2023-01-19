@@ -1,7 +1,3 @@
-// On this file you can put the sites that you want to pin on the startpage.
-// You can create the objects you want in slist array with the properties type and sites, and each one will be a category column.
-// Similarly, in the sites array property you can add the sites you want with their name, link and keyboard shortcut.
-
 let slist=[
     {
         type: 'Time Out',
@@ -15,6 +11,11 @@ let slist=[
                 name: 'Discord',
                 link: 'https://discord.com/channels/@me',
                 key: 'D',
+            },
+            {
+                name: 'r/unixporn',
+                link: 'https://www.reddit.com/r/unixporn/',
+                key: 'R',
             },
             {
                 name: 'WhatsApp',
@@ -44,7 +45,37 @@ let slist=[
         ]
     },
     {
-        type: 'Google',
+        type: 'School',
+        sites: [
+            {
+                name: 'Ingeniería',
+                link: 'https://www.ingenieria.unam.mx/',
+                key: 'F',
+            },
+            {
+                name: 'SSA',
+                link: 'https://www.ssa.ingenieria.unam.mx/magnus/',
+                key: 'M',
+            },
+            {
+                name: 'DCB',
+                link: 'https://dcb.ingenieria.unam.mx/',
+                key: 'C',
+            },
+            {
+                name: 'BIDI',
+                link: 'https://bidi.unam.mx',
+                key: 'B',
+            },
+            {
+                name: 'Classroom',
+                link: 'https://classroom.google.com',
+                key: 'T',
+            },
+        ]
+    },
+    {
+        type: 'Tools',
         sites: [
             {
                 name: 'Gogle Drive',
@@ -52,9 +83,14 @@ let slist=[
                 key: 'O',
             },
             {
-                name: 'Photos',
-                link: 'https://photos.google.com',
-                key: 'O',
+                name: 'ILovePDF',
+                link: '',
+                key: 'P',
+            },
+            {
+                name: 'Canva',
+                link: 'https://canva.com',
+                key: 'Q',
             },
             {
                 name: 'New Doc',
@@ -64,13 +100,19 @@ let slist=[
             {
                 name: 'New Sheet',
                 link: 'https://sheet.new',
-                key: 'H',
+                key: 'X',
             },
             {
                 name: 'New Slide',
                 link: 'https://slide.new',
-                key: 'S',
+                key: 'Z',
             },
         ]
     }
 ];
+const keys_array=[];
+slist.forEach((type)=>{
+    type.sites.forEach((site)=>{
+       keys_array.push(site.key); 
+    });
+});

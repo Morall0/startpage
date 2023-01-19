@@ -55,7 +55,6 @@ formTag.addEventListener('submit', (e)=>{
 	e.preventDefault();	
 	const urlQuery = "https://duckduckgo.com/?t=ffab&q=";
 	const searchValue = urlQuery+inputSearch.value;
-	console.log(searchValue);
 	window.open(searchValue);
 	inputSearch.blur();
 	formTag.style.display = 'none';
