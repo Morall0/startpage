@@ -22,6 +22,11 @@ let slist=[
                 link: 'https://web.whatsapp.com',
                 key: 'W',
             },
+            {
+                name: 'Monkeytype',
+                link: 'https://monkeytype.com',
+                key: 'M',
+            },
         ]
     },
     {
@@ -55,7 +60,7 @@ let slist=[
             {
                 name: 'SSA',
                 link: 'https://www.ssa.ingenieria.unam.mx/magnus/',
-                key: 'M',
+                key: 'A',
             },
             {
                 name: 'DCB',
@@ -72,6 +77,11 @@ let slist=[
                 link: 'https://classroom.google.com',
                 key: 'T',
             },
+            {
+                name: 'Educafi',
+                link: 'https://educafi02.ingenieria.unam.edu/EducafiUNICA/login/index.php',
+                key: 'K',
+            },
         ]
     },
     {
@@ -81,6 +91,11 @@ let slist=[
                 name: 'Gogle Drive',
                 link: 'https://drive.google.com',
                 key: 'O',
+            },
+            {
+                name: 'Gogle Photos',
+                link: 'https://photos.google.com',
+                key: 'E',
             },
             {
                 name: 'ILovePDF',
