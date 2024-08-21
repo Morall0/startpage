@@ -22,14 +22,13 @@ const formTag = document.getElementsByTagName('form')[0];
 inputSearch.value = "";
 
 htmlHotkey.addEventListener("keydown",(e)=>{
-	if (e.shiftKey && !e.ctrlKey) {
-
+	if (e.ctrlKey) {
 		if (keys_array.includes(e.key)) {
 			const a_link = document.getElementById(e.key);
 			window.open(a_link.href);
 		}
 
-		if (e.key === 'S') {
+		if (e.key === '?') {
 			cursor.style.borderColor = '#fbb829';
 			formTag.style.display = 'inline';
 			inputSearch.focus();
